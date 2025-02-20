@@ -51,7 +51,7 @@ const Hero = () => {
               transition={{ duration: 1.5, delay: 1.2 }}
               src={profile}
               alt="Piyumi Amarasingha"
-              className="w-80 h-80 lg:w-120 lg:h-96 rounded-1.2xl shadow-lg transition-transform duration-300 hover:scale-105"
+              className="w-80 h-80 lg:w-120 lg:h-85 rounded-4xl shadow-lg transition-transform duration-300 hover:scale-105"
             />
           </div>
         </div>

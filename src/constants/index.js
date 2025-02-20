@@ -1,7 +1,9 @@
-import project1 from "../assets/projects/project1.jpeg";
-import project2 from "../assets/projects/project2.jpeg";
-import project3 from "../assets/projects/project3.jpeg";
-import project4 from "../assets/projects/project4.jpeg";
+import project1 from "../assets/projects/project1.png";
+import project2 from "../assets/projects/project2.png";
+import project3 from "../assets/projects/project3.png";
+import project4 from "../assets/projects/project4.png";
+import project5 from "../assets/projects/project5.png";
+import project6 from "../assets/projects/project6.jpg";
 
 export const HERO_CONTENT = `I am a passionate full-stack developer with a knack for crafting robust and scalable web and mobile applications. 
 With hands-on experience in modern technologies, I specialize in front-end development with React.js and React Native, while leveraging back-end 
@@ -77,12 +79,14 @@ export const PROJECTS = [
   },
   {
     title: "Wikid - Chrome Extension",
+    image: project5,
     description:
       "A Chrome extension that allows users to search for selected words directly on Wikipedia.",
     technologies: ["JavaScript"],
   },
   {
     title: "Highway Tracking System",
+    image: project6,
     description:
       "A vehicle tracking system that provides notifications about dangerous areas and incidents while monitoring travel data.",
     technologies: ["Embedded Systems", "C"],

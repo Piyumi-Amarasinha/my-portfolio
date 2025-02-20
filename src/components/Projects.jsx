@@ -26,7 +26,7 @@ const Projects = () => {
                 width={150}
                 height={150}
                 alt={project.title}
-                className="mb-6 rounded"
+                className="mb-6 rounded w-[150px] h-[150px] object-cover"
               />
             </motion.div>
             <motion.div

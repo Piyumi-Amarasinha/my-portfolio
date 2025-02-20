@@ -32,72 +32,63 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
+        className="flex flex-wrap items-center justify-center gap-6"
       >
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaJava className="text-7xl text-red-600" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiJavascript className="text-7xl text-yellow-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <TbBrandReactNative className="text-7xl text-blue-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <FaNodeJs className="text-7xl text-green-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3.2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiSpringboot className="text-7xl text-green-600" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiMongodb className="text-7xl text-green-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiMysql className="text-7xl text-blue-600" />
-        </motion.div>
+        {[
+          {
+            icon: <RiReactjsLine className="text-7xl text-cyan-400" />,
+            name: "React.js",
+            duration: 2.5,
+          },
+          {
+            icon: <FaJava className="text-7xl text-red-600" />,
+            name: "Java",
+            duration: 3,
+          },
+          {
+            icon: <SiJavascript className="text-7xl text-yellow-400" />,
+            name: "JavaScript",
+            duration: 4,
+          },
+          {
+            icon: <TbBrandReactNative className="text-7xl text-blue-500" />,
+            name: "React Native",
+            duration: 3.5,
+          },
+          {
+            icon: <FaNodeJs className="text-7xl text-green-500" />,
+            name: "Node.js",
+            duration: 2,
+          },
+          {
+            icon: <SiSpringboot className="text-7xl text-green-600" />,
+            name: "Spring Boot",
+            duration: 3.2,
+          },
+          {
+            icon: <SiMongodb className="text-7xl text-green-500" />,
+            name: "MongoDB",
+            duration: 5,
+          },
+          {
+            icon: <SiMysql className="text-7xl text-blue-600" />,
+            name: "MySQL",
+            duration: 4.5,
+          },
+        ].map((tech, index) => (
+          <motion.div
+            key={index}
+            variants={iconVariants(tech.duration)}
+            initial="initial"
+            animate="animate"
+            className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
+          >
+            {tech.icon}
+            <p className="mt-2 text-lg font-semibold text-neutral-800">
+              {tech.name}
+            </p>
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );
