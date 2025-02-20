@@ -1,4 +1,4 @@
-import logo from "../assets/piyumi.png";
+import logo from "../assets/Piyumi.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa";
