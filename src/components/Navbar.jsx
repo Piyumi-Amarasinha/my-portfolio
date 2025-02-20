@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/piyumi.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaMedium } from "react-icons/fa";
@@ -10,9 +10,27 @@ const Navbar = () => {
         <img className="mx-5 w-20" src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaMedium />
+        <a
+          href="https://www.linkedin.com/in/piyumi-amarasingha-mad99/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/Piyumi-Amarasinha"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://medium.com/@piyuminavoda792"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaMedium />
+        </a>
       </div>
     </nav>
   );
