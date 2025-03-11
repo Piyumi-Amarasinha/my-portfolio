@@ -37,7 +37,7 @@ const About = () => {
               {ABOUT_TEXT}
             </p>
 
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex gap-3">
               <a
                 href="/Piyumi-Amarasingha-SE_CV.pdf"
                 download="My_CV.pdf"
