@@ -37,13 +37,15 @@ const About = () => {
               {ABOUT_TEXT}
             </p>
 
-            <a
-              href="/public/Piyumi-Amarasingha-SE_CV.pdf"
-              download="My_CV.pdf"
-              className="mr-2 rounded bg-neutral-50 px-2 py-1 text-sm font-medium text-purple-900 shadow-md transition duration-300 hover:bg-black"
-            >
-              Download CV
-            </a>
+            <div className="mt-4">
+              <a
+                href="/Piyumi-Amarasingha-SE_CV.pdf"
+                download="My_CV.pdf"
+                className="rounded bg-purple-900 px-4 py-2 text-sm font-medium text-white shadow-md transition duration-300 hover:bg-black"
+              >
+                Download CV
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>
