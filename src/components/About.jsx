@@ -40,7 +40,7 @@ const About = () => {
             <a
               href="/public/Piyumi-Amarasingha-SE_CV.pdf"
               download="My_CV.pdf"
-              className="mt-4 inline-block rounded-lg bg-blue-600 px-6 py-3 text-lg font-semibold text-white shadow-md transition duration-300 hover:bg-blue-700"
+              className="mr-2 rounded bg-neutral-50 px-2 py-1 text-sm font-medium text-purple-900 shadow-md transition duration-300 hover:bg-black"
             >
               Download CV
             </a>
