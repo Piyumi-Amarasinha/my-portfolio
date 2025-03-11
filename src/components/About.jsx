@@ -32,16 +32,16 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-2/3"
         >
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex flex-col justify-start">
             <p className="my-4 max-w-xl py-6 text-lg leading-relaxed text-gray-700">
               {ABOUT_TEXT}
             </p>
 
-            <div className="mt-4">
+            <div className="mt-6 flex gap-4">
               <a
                 href="/Piyumi-Amarasingha-SE_CV.pdf"
                 download="My_CV.pdf"
-                className="rounded bg-purple-900 px-4 py-2 text-sm font-medium text-white shadow-md transition duration-300 hover:bg-black"
+                className="rounded-full bg-purple-900 px-4 py-2 text-sm font-medium text-white shadow-md transition duration-300 hover:bg-black"
               >
                 Download CV
               </a>
