@@ -31,7 +31,7 @@ Here’s my Portfolio Demo:
 Clone this repository and run it locally:  
 ```bash
 git clone https://github.com/Piyumi-Amarasinha/my-portfolio.git  
-cd your-portfolio-repo  
+cd my-portfolio  
 npm install  
 npm run dev  
 ```
