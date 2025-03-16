@@ -1,6 +1,46 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌟 My Portfolio  
+
+Welcome to my portfolio! This project showcases my skills, projects, and experience in software development. The portfolio is designed to provide an interactive and visually appealing representation of my work.  
+
+## 🚀 Live Demo  
+Check out the live version of my portfolio:  
+🔗 [My Portfolio](https://my-portfolio-zbmo-git-main-piyumi-amarasinghas-projects.vercel.app/)  
+
+
+Here’s my Portfolio Demo:
+
+
+![My - Portfolio](https://github.com/Piyumi-Amarasinha/chrome-extensions/blob/2e106875de0524b9cd06a8c8565049abad170b6c/Wikid-demo.png)
+
+
+## 📌 Features  
+- 🖥️ **Modern UI/UX** – A clean and responsive design for an optimal viewing experience.  
+- 📂 **Projects Showcase** – Highlights my key projects with descriptions, technologies used, and live/demo links.  
+- 📜 **About Me** – A brief introduction to my background, skills, and professional journey.  
+- 📞 **Contact Information** – Easy ways to connect with me, including social media links.  
+- 🎨 **Animations & Effects** – Engaging transitions and smooth animations for better user experience.  
+
+## 🛠️ Technologies Used  
+- **Frontend:** React, Next.js, Tailwind CSS  
+- **Deployment:** Vercel  
+- **Version Control:** Git, GitHub  
+
+## 📌 How to Use  
+Clone this repository and run it locally:  
+```bash
+git clone https://github.com/Piyumi-Amarasinha/my-portfolio.git  
+cd your-portfolio-repo  
+npm install  
+npm run dev  
+```
+
+## 📬 Contact  
+If you’d like to collaborate or have any inquiries, feel free to reach out:  
+📧 Email: [piyuminavoda792@gmail.com]  
+🔗 LinkedIn: [www.linkedin.com/in/piyumi-amarasingha-mad99]  
+
 
 Currently, two official plugins are available:
 
