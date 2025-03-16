@@ -12,7 +12,7 @@ Check out the live version of my portfolio:
 Here’s my Portfolio Demo:
 
 
-![My - Portfolio](https://github.com/Piyumi-Amarasinha/chrome-extensions/blob/2e106875de0524b9cd06a8c8565049abad170b6c/Wikid-demo.png)
+![My - Portfolio](https://github.com/Piyumi-Amarasinha/my-portfolio/blob/main/portfolio-demo.png?raw=true)
 
 
 ## 📌 Features  
