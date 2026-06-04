@@ -12,51 +12,89 @@ const container = (delay) => ({
 });
 const Hero = () => {
   return (
-    <div className="relative border-b border-neutral-100 pb-12 lg:mb-40 bg-gradient-to-b from-white to-gray-50">
-      <div className="flex flex-wrap items-center px-6 lg:px-20">
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-            <motion.h1
-              variants={container(0)}
-              initial="hidden"
-              animate="visible"
-              className="pb-6 text-5xl lg:text-5xl font-semibold tracking-tight text-gray-900"
+    <section id="home" className="section">
+      <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="space-y-6">
+          <motion.p
+            variants={container(0)}
+            initial="hidden"
+            animate="visible"
+            className="eyebrow"
+          >
+            Portfolio
+          </motion.p>
+          <motion.h1
+            variants={container(0.2)}
+            initial="hidden"
+            animate="visible"
+            className="section-title text-5xl font-semibold text-slate-900 lg:text-6xl"
+          >
+            Piyumi Amarasingha
+          </motion.h1>
+
+          <motion.p
+            variants={container(0.6)}
+            initial="hidden"
+            animate="visible"
+            className="max-w-2xl text-lg leading-relaxed text-slate-600"
+          >
+            {HERO_CONTENT}
+          </motion.p>
+          <motion.div
+            variants={container(0.8)}
+            initial="hidden"
+            animate="visible"
+            className="flex flex-wrap gap-4"
+          >
+            <a
+              href="#projects"
+              className="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(15,23,42,0.25)] transition hover:-translate-y-0.5"
             >
-              Piyumi Amarasingha
-            </motion.h1>
-            <motion.span
-              variants={container(0.5)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-400 via-indigo-500 to-purple-600 bg-clip-text text-4xl tracking-tight text-transparent font-semibold"
+              View Projects
+            </a>
+            <a
+              href="#contact"
+              className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5"
             >
-              Full Stack Developer
-            </motion.span>
-            <motion.p
-              variants={container(1)}
-              initial="hidden"
-              animate="visible"
-              className="mt-6 max-w-2xl text-lg font-light leading-relaxed text-gray-700"
-            >
-              {HERO_CONTENT}
-            </motion.p>
-          </div>
+              Let&apos;s Talk
+            </a>
+          </motion.div>
         </div>
 
-        <div className="w-full lg:w-1/2 lg:p-12">
-          <div className="flex justify-center">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1.5, delay: 1.2 }}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.2, delay: 0.6 }}
+          className="hero-card p-6"
+        >
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+                Availability
+              </p>
+              <p className="text-sm font-semibold text-slate-700">
+                Open for new work
+              </p>
+            </div>
+          </div>
+          <div className="mt-6 flex justify-center">
+            <img
               src={profile}
               alt="Piyumi Amarasingha"
-              className="w-80 h-80 lg:w-120 lg:h-85 rounded-4xl shadow-lg transition-transform duration-300 hover:scale-105"
+              className="h-72 w-72 rounded-[28px] object-cover shadow-[0_20px_40px_rgba(15,23,42,0.2)]"
             />
           </div>
-        </div>
+          <div className="mt-6 grid grid-cols-2 gap-4 text-sm">
+            <div className="rounded-2xl bg-white px-4 py-3 text-slate-600">
+              Frontend systems with React and React Native.
+            </div>
+            <div className="rounded-2xl bg-white px-4 py-3 text-slate-600">
+              API-first backend work with Node.js and Spring Boot.
+            </div>
+          </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

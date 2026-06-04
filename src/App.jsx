@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -7,14 +8,17 @@ import Technologies from "./components/Technologies";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden text-neutral-900 antialiased selection:bg-cyan-300 selectiom:text-cyan-900">
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div className="absolute top-0 z-[-2] h-screen w-screen rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(125, 182, 228, 0.94)_100%)]"></div>
+    <div className="site-bg overflow-x-hidden antialiased">
+      <div className="decor-layer" aria-hidden="true">
+        <span className="blob blob-1"></span>
+        <span className="blob blob-2"></span>
+        <span className="blob blob-3"></span>
       </div>
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-6 lg:px-10">
         <Navbar />
         <Hero />
         <About />
+        <Experience />
         <Technologies />
         <Projects />
         <Contact />

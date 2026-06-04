@@ -19,20 +19,23 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className="relative border-b border-neutral-100 pb-12 lg:mb-40 bg-gradient-to-b from-white to-gray-50">
-      <motion.h1
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
-      >
-        Technologies
-      </motion.h1>
+    <section id="tech" className="section">
       <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-6"
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        transition={{ duration: 0.8 }}
+        className="mb-12 text-center"
+      >
+        <p className="eyebrow">Toolbox</p>
+        <h2 className="section-title text-4xl font-semibold text-slate-900">
+          Technologies I enjoy working with
+        </h2>
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 60 }}
+        transition={{ duration: 0.8 }}
+        className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4"
       >
         {[
           {
@@ -81,16 +84,14 @@ const Technologies = () => {
             variants={iconVariants(tech.duration)}
             initial="initial"
             animate="animate"
-            className="flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4"
+            className="glass-card flex flex-col items-center gap-2 rounded-2xl p-5 text-center"
           >
             {tech.icon}
-            <p className="mt-2 text-lg font-semibold text-neutral-800">
-              {tech.name}
-            </p>
+            <p className="text-sm font-semibold text-slate-700">{tech.name}</p>
           </motion.div>
         ))}
       </motion.div>
-    </div>
+    </section>
   );
 };
 

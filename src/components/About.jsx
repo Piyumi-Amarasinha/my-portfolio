@@ -4,52 +4,57 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="relative border-b border-neutral-100 pb-12 lg:mb-40 bg-gradient-to-b from-white to-gray-50">
-      <h1 className="mt-16 mb-8 text-center text-5xl font-bold tracking-tight text-gray-900">
-        About
-        <span className="text-neutral-500"> Me</span>
-      </h1>
-
-      <div className="flex flex-wrap items-center justify-center px-6 lg:px-20">
+    <section id="about" className="section">
+      <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/3 p-4"
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 60 }}
+          transition={{ duration: 0.6 }}
+          className="space-y-6"
         >
-          <div className="flex justify-center">
-            <img
-              className="rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105 w-72 h-auto"
-              src={aboutImg}
-              alt="About"
-            />
+          <p className="eyebrow">About</p>
+          <h2 className="section-title text-4xl font-semibold text-slate-900">
+            Learning, building, and growing through technology.
+          </h2>
+          <p className="text-lg leading-relaxed text-slate-600">{ABOUT_TEXT}</p>
+          <div className="flex flex-wrap gap-3">
+            <span className="accent-chip">User-focused</span>
+            <span className="accent-chip">Product thinking</span>
+            <span className="accent-chip">Clean architecture</span>
           </div>
+          <a
+            href="/Piyumi-Amarasingha-SE_CV.pdf"
+            download="My_CV.pdf"
+            className="inline-flex rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-[0_12px_28px_rgba(15,23,42,0.25)] transition hover:-translate-y-0.5"
+          >
+            Download CV
+          </a>
         </motion.div>
 
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-2/3"
+          initial={{ opacity: 0, x: 80 }}
+          transition={{ duration: 0.6 }}
+          className="glass-card p-6"
         >
-          <div className="flex flex-col justify-start">
-            <p className="my-4 max-w-xl py-6 text-lg leading-relaxed text-gray-700">
-              {ABOUT_TEXT}
-            </p>
-
-            <div className="mt-6 flex gap-1">
-              <a
-                href="/Piyumi-Amarasingha-SE_CV.pdf"
-                download="My_CV.pdf"
-                className="rounded-full bg-purple-900 px-4 py-2 text-sm font-medium text-white shadow-md transition duration-300 hover:bg-black"
-              >
-                Download CV
-              </a>
+          <img
+            className="h-72 w-full rounded-2xl object-cover"
+            src={aboutImg}
+            alt="About"
+          />
+          <div className="mt-6 grid gap-4 text-sm text-slate-600">
+            <div className="rounded-2xl bg-white px-4 py-4">
+              I enjoy building full-stack experiences that feel fast, polished,
+              and intuitive.
+            </div>
+            <div className="rounded-2xl bg-white px-4 py-4">
+              Recent focus: mobile-first design systems, API performance, and
+              team collaboration.
             </div>
           </div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

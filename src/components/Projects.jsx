@@ -3,53 +3,51 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="relative border-b border-neutral-100 pb-12 lg:mb-40 bg-gradient-to-b from-white to-gray-50">
-      <motion.h2
+    <section id="projects" className="section">
+      <motion.div
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1 }}
-        className="my-20 text-center text-4xl"
+        initial={{ opacity: 0, y: 60 }}
+        transition={{ duration: 0.8 }}
+        className="mb-12 text-center"
       >
-        Projects
-      </motion.h2>
-      <div>
+        <p className="eyebrow">Selected work</p>
+        <h2 className="section-title text-4xl font-semibold text-slate-900">
+          Projects and experiments
+        </h2>
+      </motion.div>
+      <div className="grid gap-8 lg:grid-cols-3">
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-8 flex flex-wap lg:justify-center">
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
-              className="w-full lg:w-1/4"
-            >
-              <img
-                src={project.image}
-                width={150}
-                height={150}
-                alt={project.title}
-                className="mb-6 rounded w-[150px] h-[150px] object-cover"
-              />
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4 text-neutral-900">{project.description}</p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 rounded bg-neutral-50 px-2 py-1 text-sm font-medium text-purple-900"
-                >
-                  {tech}
-                </span>
-              ))}
-            </motion.div>
-          </div>
+          <motion.article
+            key={index}
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 40 }}
+            transition={{ duration: 0.6 }}
+            className="project-card p-6"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="project-image"
+            />
+            <div className="mt-5">
+              <h3 className="text-lg font-semibold text-slate-900">
+                {project.title}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                {project.description}
+              </p>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {project.technologies.map((tech, techIndex) => (
+                  <span key={techIndex} className="accent-chip">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
