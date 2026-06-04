@@ -27,11 +27,11 @@ const Technologies = () => {
         <div className="tech-track">
           {[
             {
-              icon: <RiReactjsLine className="text-5xl text-cyan-400" />,
+              icon: <RiReactjsLine className="text-5xl text-cyan-500" />,
               name: "React.js",
             },
             {
-              icon: <RiNextjsFill className="text-5xl text-cyan-400" />,
+              icon: <RiNextjsFill className="text-5xl text-cyan-500" />,
               name: "Next.js",
             },
             {
