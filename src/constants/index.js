@@ -101,7 +101,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "No 78, Werenketagoda, Ampara. ",
+  address: "No 461/B/139, City of life, Kahathuduwa, Polgasowita.",
   phoneNo: "+94 71 073 3598 ",
   email: "piyuminavoda792@gmail.com",
 };

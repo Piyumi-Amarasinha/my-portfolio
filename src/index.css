@@ -166,6 +166,47 @@ body {
   box-shadow: var(--shadow);
 }
 
+.tech-marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-track {
+  display: flex;
+  gap: 32px;
+  width: max-content;
+  animation: tech-scroll 26s linear infinite;
+}
+
+.tech-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.tech-mask {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 244, 228, 1) 0%,
+    rgba(255, 244, 228, 0) 12%,
+    rgba(230, 247, 243, 0) 88%,
+    rgba(230, 247, 243, 1) 100%
+  );
+}
+
+@keyframes tech-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .timeline {
   position: relative;
   padding-left: 34px;
