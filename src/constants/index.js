@@ -78,19 +78,20 @@ export const PROJECTS = [
     technologies: ["React.js", "Node.js", "MongoDB"],
   },
   {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
     title: "MyTodo",
     image: project5,
     description:
       "A lightweight Flutter-based task management app that helps users create, manage, and track daily tasks with an intuitive and user-friendly interface.",
     technologies: ["C++", "Flutter", "Dart"],
   },
+  {
+    title: "Portfolio Website",
+    image: project3,
+    description:
+      "A personal portfolio website showcasing projects, skills, and contact information.",
+    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+  },
+
   {
     title: "Highway Tracking System",
     image: project6,
