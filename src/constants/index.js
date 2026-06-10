@@ -71,13 +71,6 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "Angular", "Firebase"],
   },
   {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  },
-  {
     title: "Blogging Platform",
     image: project4,
     description:
@@ -85,11 +78,18 @@ export const PROJECTS = [
     technologies: ["React.js", "Node.js", "MongoDB"],
   },
   {
-    title: "Wikid - Chrome Extension",
+    title: "Portfolio Website",
+    image: project3,
+    description:
+      "A personal portfolio website showcasing projects, skills, and contact information.",
+    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+  },
+  {
+    title: "MyTodo",
     image: project5,
     description:
-      "A Chrome extension that allows users to search for selected words directly on Wikipedia.",
-    technologies: ["JavaScript"],
+      "A lightweight Flutter-based task management app that helps users create, manage, and track daily tasks with an intuitive and user-friendly interface.",
+    technologies: ["C++", "Flutter", "Dart"],
   },
   {
     title: "Highway Tracking System",
