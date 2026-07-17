@@ -2,8 +2,10 @@ import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
-import project5 from "../assets/projects/project5.png";
+import project5 from "../assets/projects/project5.webp";
 import project6 from "../assets/projects/project6.jpg";
+import project7 from "../assets/projects/project7.jpg";
+import project8 from "../assets/projects/project8.jpg";
 
 export const HERO_CONTENT = `I am a passionate full-stack developer with a knack for crafting robust and scalable web and mobile applications. 
 With hands-on experience in modern technologies, I specialize in front-end development with React.js and React Native, while leveraging back-end 
@@ -56,6 +58,20 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Agricultural Price Forecasting System",
+    image: project8,
+    description:
+      "A machine learning-based forecasting system that predicts wholesale vegetable prices using historical market data and weather conditions. The application combines XGBoost, climate analytics, and explainable AI (SHAP) with an interactive Streamlit dashboard to support smarter agricultural decision-making.",
+    technologies: ["Python", "XGBoost", "Streamlit", "Scikit-learn", "SHAP"],
+  },
+  {
+    title: "Coffetto",
+    image: project7,
+    description:
+      "The Coffetto website's front-end has been developed with modern technologies to create an engaging, interactive, and responsive user interface. The front-end structure is component-based, ensuring that each section is modular and easy to maintain.",
+    technologies: ["JavaScript", "HTML5", "React", "Tailwind CSS", "CSS"],
+  },
   {
     title: "Mental Health and Awareness Mobile Application",
     image: project1,
